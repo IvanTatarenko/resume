@@ -1,0 +1,88 @@
+.body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(224, 224, 224);
+    width: 1024px;
+    height: 1024px;
+    border-radius: 25px;
+    box-shadow: 0 0 50px gray;
+    font-family: 'Roboto', sans-serif;
+}
+.bloc1{
+    height: 300px;
+}
+.foto{
+    width: 300px;
+    float: left;
+}
+.name{
+    width: 424px;
+    float: left;
+    padding-top: 50px;
+}
+.foto_img{
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px gray;
+    transition: filter .7s ease-in-out; 
+    filter: grayscale(100%);  
+}
+.foto_img:hover {
+    filter: grayscale(0%);  
+}
+.language{
+    width: 300px;
+    float: left;
+    margin-top: 50px;
+}
+.language h4{
+    text-align:center;
+}
+.language ul{
+    list-style-type:none;
+    position: relative;
+    left: 57px;
+    line-height: 20px;
+}
+.flag_img{
+
+}
+.bloc2{
+    height: 300px;
+}
+.contacts{
+    width: 250px;
+    float: left;
+    margin-left: 50px;
+}
+.about_myself {
+    width: 650px;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.about_myself:before,
+.about_myself:after {
+    content: '';
+    position: absolute;
+}
+.about_myself:before {
+    left: 10px;
+    top: -50px;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #ffffff; 
+    transform: skew(20deg);
+}
+.about_myself h4{
+    position: absolute;
+    top: -46px;
+    left: 75px;
+}
+
+
