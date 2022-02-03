@@ -1,12 +1,12 @@
 @font-face { font-family: 'Roboto'; src: url('/Roboto-Thin.ttf');}
 h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 .body{
     margin-left: auto;
