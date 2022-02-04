@@ -1,12 +1,12 @@
-@font-face { font-family: 'Roboto'; src: url('/Roboto-Thin.ttf');}
+@font-face { font-family: 'roboto'; src: url('/roboto-thin.ttf');}
 h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 .body{
     margin-left: auto;
@@ -18,7 +18,7 @@ h4{
     height: 2000px;
     border-radius: 25px;
     box-shadow: 0 0 50px #808080;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 .bloc1{
     height: 300px;
