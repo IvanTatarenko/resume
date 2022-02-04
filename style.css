@@ -52,6 +52,9 @@ h4{
 }
 .language h4{
     text-align:center;
+    position: relative;
+    right: -40px;
+    top: 20px;
 }
 .language ul{
     list-style-type:none;
