@@ -1,4 +1,4 @@
-@font-face { font-family: 'roboto'; src: url('/roboto-thin.ttf');}
+@font-face { font-family: 'roboto'; src: url('/fonts/roboto-thin.ttf');}
 h1{
     font-family: 'roboto', sans-serif;
 }
@@ -26,11 +26,13 @@ h4{
 .foto{
     width: 300px;
     float: left;
+    font-family: 'roboto', sans-serif;
 }
 .name{
     width: 424px;
     float: left;
     padding-top: 50px;
+    font-family: 'roboto', sans-serif;
 }
 .foto_img{
     margin-left: 50px;
