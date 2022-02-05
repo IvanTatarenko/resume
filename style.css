@@ -10,6 +10,19 @@ h4{
 }
 body{
     background-color: rgb(224, 224, 224);
+    margin: 0; padding: 0;
+}
+.top_bar{
+    height: 50px;
+    width: 100%;
+    background-color: #A6CDD8;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.locale-switcher{
+    margin: 50px;
+    height: 30px;
 }
 .body{
     margin-left: auto;

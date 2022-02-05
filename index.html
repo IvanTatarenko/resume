@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang= "uk">
     <head>
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel='icon' href='../resume/favicon.ico' type='image/x-icon' />
-        <title>Резюме Татаренко Іван</title>
+        <title data-i18n-key= "title"></title>
     </head>
     <body>
+        <div class = "top_bar">
+            <nav>
+                <select data-i18n-switcher class="locale-switcher">
+                    <option value="uk">Українська</option>
+                    <option value="en">English</option>
+                </select>
+            </nav>
+        </div>
         <div class = "body">
             <div class = "bloc1">
                 <div class = "foto">
                     <img class = "foto_img" src="img/foto.webp" alt="Фото Іван Татаренко" height="200" width="200">
                 </div>
                 <div class = "name">
-                    <h1>Іван Татаренко</h1><br>
-                    <h3>Front-end, back-end developer</h4>
-                    <p>Київ, Україна</p>
+                    <h1 data-i18n-key="name-title" title="Іван Татаренко">Іван Татаренко</h1><br>
+                    <h3 data-i18n-key="job-title">Front-end, back-end developer</h4>
+                    <p data-i18n-key="location-title">Київ, Україна</p>
                 </div>
                 <div class = "language">
-                    <h4>Знання мов</h4>
+                    <h4 data-i18n-key="language-title">Знання мов</h4>
                     <ul>
-                        <li><a href="../resume/index_en.html" title="Перейти на англійську версію резюме" class = "url_not_underline"><img class = "icon_flag" src="img/flag_en.svg" alt="Прапор Англії" height="25" width="25"> Англійська (Pre-Intermediate)</a></li>
+                        <li><img class = "icon_flag" src="img/flag_en.svg" alt="Прапор Англії" height="25" width="25"> Англійська (Pre-Intermediate)</a></li>
                         <li><img class = "icon_flag" src="img/flag_ua.svg" alt="Прапор України" height="25" width="25"> Українська (Рідна)</li>
                     </ul>
                 </div>
@@ -82,5 +90,6 @@
                 <a href="https://uk.wikipedia.org/wiki/WordPress" target="_blank" title="Wordpress"><img class = "icon_img" src="img/icon_wordpress.svg" alt="Іконка WordPress" height="65" width="65"></a>
             </div>
         </div>
+        <script src= "js/language.js"></script>
     </body>
 </html>
