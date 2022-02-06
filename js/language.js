@@ -1,14 +1,17 @@
 // The locale our app first shows
 const defaultLocale = "en";
+const supportedLocales = ["uk", "en"];
 // The active locale
 let locale;
 // Gets filled with active locale translations
 let translations = {};
 // When the page content is ready...
 document.addEventListener("DOMContentLoaded", () => {
-    setLocale(defaultLocale);
-    bindLocaleSwitcher(defaultLocale);
-  });
+  const initialLocale = 
+    supportedOrDefault(browserLocales(true));
+  setLocale(initialLocale);
+  bindLocaleSwitcher(initialLocale);
+});
 // Load translations for the given locale and translate
 // the page to this locale
 async function setLocale(newLocale) {
@@ -18,10 +21,21 @@ async function setLocale(newLocale) {
   translations = newTranslations;
   translatePage();
 }
+function isSupported(locale) {
+  return supportedLocales.indexOf(locale) > -1;
+}
+function supportedOrDefault(locales) {
+  return locales.find(isSupported) || defaultLocale;
+}
+function browserLocales(languageCodeOnly = false) {
+  return navigator.languages.map((locale) =>
+    languageCodeOnly ? locale.split("-")[0] : locale,
+  );
+}
 // Retrieve translations JSON object for the given
 // locale over the network
 async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`../../lang/${newLocale}.json`);
+  const response = await fetch(`resume/lang/${newLocale}.json`);
   return await response.json();
 }
 // Replace the inner text of each element that has a
@@ -62,7 +76,7 @@ function bindLocaleSwitcher(initialValue) {
     if(e.target.value == "en"){
       var tag_css = document.createElement('link');
       tag_css.rel = 'stylesheet';
-      tag_css.href = 'style_en.css';
+      tag_css.href = 'resume/style_en.css';
       tag_css.type = 'text/css';
       var tag_head = document.getElementsByTagName('head');
       tag_head[0].appendChild(tag_css);
