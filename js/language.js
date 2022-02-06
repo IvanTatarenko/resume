@@ -35,7 +35,7 @@ function browserLocales(languageCodeOnly = false) {
 // Retrieve translations JSON object for the given
 // locale over the network
 async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`lang/${newLocale}.json`);
+  const response = await fetch(`../lang/${newLocale}.json`);
   return await response.json();
 }
 // Replace the inner text of each element that has a
@@ -76,7 +76,7 @@ function bindLocaleSwitcher(initialValue) {
     if(e.target.value == "en"){
       var tag_css = document.createElement('link');
       tag_css.rel = 'stylesheet';
-      tag_css.href = 'style_en.css';
+      tag_css.href = '../style_en.css';
       tag_css.type = 'text/css';
       var tag_head = document.getElementsByTagName('head');
       tag_head[0].appendChild(tag_css);
@@ -85,7 +85,7 @@ function bindLocaleSwitcher(initialValue) {
   if(defaultLocale == "en"){
     var tag_css = document.createElement('link');
     tag_css.rel = 'stylesheet';
-    tag_css.href = 'style_en.css';
+    tag_css.href = '../style_en.css';
     tag_css.type = 'text/css';
     var tag_head = document.getElementsByTagName('head');
     tag_head[0].appendChild(tag_css);
