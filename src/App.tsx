@@ -100,7 +100,7 @@ export default function App() {
         display: "flex",
         flexDirection: "column",
         gap: "10px",
-        maxWidth: "490px",
+        maxWidth: "700px",
       }}
     >
       <Card
