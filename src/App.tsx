@@ -100,7 +100,7 @@ export default function App() {
         display: "flex",
         flexDirection: "column",
         gap: "10px",
-        maxWidth: "700px",
+        maxWidth: "770px",
       }}
     >
       <Card
@@ -185,7 +185,8 @@ export default function App() {
         shadowColor="white"
         className="p-2"
       >
-        <p>## Проєкти</p>
+        <p>## Досвід</p>
+        <p>### Проєкти</p>
         <div
           style={{
             display: "grid",
@@ -247,7 +248,7 @@ export default function App() {
         shadowColor="white"
         className="p-2"
       >
-        <p>## Контакти</p>
+        <p>### Контакти</p>
         <p>Telegram: +38 063 777 32 85</p>
         <p>
           Email: <a href="mailto:vakummail@gmail.com">vakummail@gmail.com</a>
