@@ -125,7 +125,7 @@ export default function App() {
               # Іван Татаренко
             </h1>
             <img
-              src="/images/photo.png"
+              src="/resume/images/photo.png"
               alt="Фото Івана"
               style={{
                 width: "100px",
