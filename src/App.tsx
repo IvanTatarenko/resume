@@ -221,7 +221,7 @@ export default function App() {
             </div>
           ))}
         </div>
-        <p style={{ marginTop: "15px" }}>## Робота</p>
+        <p style={{ marginTop: "15px" }}>### Робота</p>
         <div
           style={{
             gap: "8px",
@@ -248,7 +248,7 @@ export default function App() {
         shadowColor="white"
         className="p-2"
       >
-        <p>### Контакти</p>
+        <p>## Контакти</p>
         <p>Telegram: +38 063 777 32 85</p>
         <p>
           Email: <a href="mailto:vakummail@gmail.com">vakummail@gmail.com</a>
